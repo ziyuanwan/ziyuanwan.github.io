@@ -1,0 +1,9 @@
+/* Your design layer. Loaded after styles.css.
+   Add your own colors, fonts, spacing, or layout here. */
+:root {
+  --accent: #174e40;
+  --paper: #ffffff;
+}
+/* To add a portrait, change the image path and alt text in index.html.
+   To add personal artwork, replace assets/design-study.svg or change
+   the image path inside the Personal section of index.html. */
