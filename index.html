@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ziyuan Wan — personal academic website.">
-  <meta name="theme-color" content="#174e40">
+  <meta name="description" content="Ziyuan Wan">
+  <meta name="theme-color" content="#fdfdf9">
   <title>Ziyuan Wan</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -12,25 +12,39 @@
   <script src="site-config.js" defer></script>
   <script src="script.js" defer></script>
 </head>
-<body>
+<body data-page="Home">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page">
-    <header class="site-header">
-      <a class="wordmark" href="#" data-name>Ziyuan Wan</a>
-      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#cv">CV</a><a href="#personal">Personal</a></nav>
-    </header>
-    <main id="main">
-      <section class="intro-section" id="about" aria-labelledby="name">
-        <div class="intro-copy"><p class="eyebrow">Personal academic website</p><h1 id="name" data-name>Ziyuan Wan</h1><p class="bio" data-bio>Welcome to my website. A short biography will be added here.</p><p class="about-detail" data-about-detail></p><div class="profile-links"><a href="https://github.com/ziyuanwan" data-github>GitHub</a><a href="#cv">Curriculum vitae</a><a data-email hidden>Email</a><a data-linkedin hidden>LinkedIn</a></div></div>
-        <figure class="profile-art"><img src="assets/design-study.svg" alt="Abstract geometric artwork in green and terracotta" width="960" height="600"><figcaption>A space for a portrait or your own design.</figcaption></figure>
+  <div class="site-layout">
+    <aside class="profile" aria-label="Personal information">
+      <a class="profile-name" href="index.html" data-name>Ziyuan Wan</a>
+      <!-- Replace this artwork with a portrait using photo in site-config.js. -->
+      <img class="profile-photo" data-photo src="assets/design-study.svg" alt="Abstract artwork in green and terracotta" width="256" height="272">
+      <div class="profile-links">
+        <a data-email href="mailto:ziyuan.wan@kuleuven.be">ziyuan.wan@kuleuven.be</a>
+        <a data-github href="https://github.com/ziyuanwan">GitHub</a>
+        <a data-linkedin hidden>LinkedIn</a>
+      </div>
+    </aside>
+    <div class="content-column">
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+        <a href="personal.html">Personal</a>
+      </nav>
+      <main id="main" tabindex="-1">
+      <section class="biography" id="about" aria-label="About Ziyuan Wan">
+        <div data-bio><p>I am a PhD student at the Department of Economics, KU Leuven and ECARES, Université Libre de Bruxelles. I am also a PhD fellow for fundamental research at Research Foundation Flanders (FWO). My main field of research is family economics. I work on a broad topic of marriage, children, human capital, inequality.</p></div>
+        <p data-about-detail hidden></p>
       </section>
-      <section class="academic-section" id="research"><div class="section-title"><h2>Research</h2></div><div class="section-content"><p class="section-intro">Research papers and work in progress will be listed here.</p><div class="empty-entry"><h3>Working papers</h3><p>Details coming soon.</p></div><div class="empty-entry"><h3>Work in progress</h3><p>Details coming soon.</p></div></div></section>
-      <section class="academic-section" id="teaching"><div class="section-title"><h2>Teaching</h2></div><div class="section-content"><p>Teaching information will be added here.</p></div></section>
-      <section class="academic-section" id="cv"><div class="section-title"><h2>Curriculum vitae</h2></div><div class="section-content"><p data-cv-placeholder>A curriculum vitae will be available here soon.</p><a class="download-link" data-cv hidden>Download CV (PDF)</a></div></section>
-      <section class="academic-section" id="personal"><div class="section-title"><h2>Personal</h2></div><div class="section-content"><p>A space for interests and design beyond research.</p><details class="design-note"><summary>Design sketchbook</summary><figure><img src="assets/design-study.svg" alt="Sample geometric composition of intersecting circles and parallel lines" width="960" height="600" loading="lazy"><figcaption>Sample artwork. Your own designs can go here.</figcaption></figure></details></div></section>
-      <section class="academic-section" id="contact"><div class="section-title"><h2>Contact</h2></div><div class="section-content"><p data-contact-placeholder>Contact details will be added soon.</p><a data-contact-email hidden></a></div></section>
-    </main>
-    <footer><span>© <span data-year></span> <span data-name>Ziyuan Wan</span></span><a href="#">Back to top</a></footer>
+      <section class="section" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <p>Research papers and work in progress will be listed here.</p>
+        <a href="research.html">Research details</a>
+      </section>
+      </main>
+    </div>
   </div>
 </body>
 </html>

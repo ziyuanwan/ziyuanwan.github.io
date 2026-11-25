@@ -1,9 +1,7 @@
-/* Your design layer. Loaded after styles.css.
-   Add your own colors, fonts, spacing, or layout here. */
+/* Your personal design overrides. This file loads after styles.css. */
 :root {
-  --accent: #174e40;
-  --paper: #ffffff;
+  --paper: #fdfdf9;
+  --accent: #4d626b;
 }
-/* To add a portrait, change the image path and alt text in index.html.
-   To add personal artwork, replace assets/design-study.svg or change
-   the image path inside the Personal section of index.html. */
+/* Change --accent for link colors, or --paper for the page background.
+   To add a portrait, set photo: 'assets/portrait.jpg' in site-config.js. */

@@ -8,5 +8,7 @@ window.siteConfig = {
   email: 'ziyuan.wan@kuleuven.be',
   github: 'https://github.com/ziyuanwan',
   linkedin: '',
+  photo: '', // Upload a portrait to assets/, then enter e.g. assets/portrait.jpg
+  photoAlt: 'Portrait of Ziyuan Wan',
   cv: '' // Add assets/cv.pdf, then enter that path here.
 };
