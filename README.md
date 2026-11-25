@@ -1,8 +1,8 @@
 # Ziyuan Wan — personal academic website
 
-A responsive academic economics website for GitHub Pages, with a persistent profile sidebar, serif typography, and separate content pages. Plain HTML, CSS, and JavaScript; no package installation or build step.
+A responsive academic economics website for GitHub Pages, with a landscape banner, a homepage portrait, sans-serif typography, and separate Home, Research, and CV pages. Plain HTML, CSS, and JavaScript; no package installation or build step.
 
-Your biography and email are in `site-config.js`. Research, teaching, and CV sections are ready to be filled in. The geometric artwork can be replaced with a portrait or your own work.
+Your biography and email are in `site-config.js`. Current projects are in `research.html`, and the CV is stored in `assets/cv.pdf`.
 
 ## Edit in your browser
 
@@ -16,10 +16,9 @@ Start with `site-config.js` for your biography and contact details. Keep quotati
 ## Make it yours
 
 - Edit `site-config.js` for your name, biography, contact links, and page metadata. Empty contact links stay hidden.
-- Edit `index.html` for the home page, `research.html` for papers, `teaching.html` for teaching, `cv.html` for the CV page, and `personal.html` for your designs and interests.
+- Edit `index.html` for the home page, `research.html` for papers, `cv.html` for the CV page.
 - Edit `custom.css` for your own colors, fonts, spacing, and layout. It loads last so your rules take precedence.
-- Upload a portrait into `assets/`, then set `photo` and `photoAlt` in `site-config.js`. This updates the sidebar on every page.
-- Replace the artwork or add images inside `personal.html` for your own design work.
+- Upload a portrait into `assets/`, then set `photo` and `photoAlt` in `site-config.js`. This updates the homepage portrait.
 - Add a CV to `assets/` and set `cv` in the configuration.
 
 Keep only content you want to publish in this folder. The surrounding workspace is not part of the website.

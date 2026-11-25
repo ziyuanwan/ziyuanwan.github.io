@@ -48,6 +48,6 @@ if (photo) document.querySelectorAll('[data-photo]').forEach(img => {
 });
 // Preserve links to sections from the previous one-page website.
 if (page === 'Home') {
-  const destinations = { '#research': 'research.html', '#teaching': 'teaching.html', '#cv': 'cv.html', '#personal': 'personal.html' };
+  const destinations = { '#research': 'research.html', '#cv': 'cv.html' };
   if (destinations[location.hash]) location.replace(destinations[location.hash]);
 }
