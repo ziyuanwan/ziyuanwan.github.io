@@ -1,4 +1,4 @@
-/* Personal design overrides. Local draft; not published. */
+/* Personal design overrides. */
 :root {
   --paper: #fff;
   --font: 'Segoe UI', Arial, sans-serif;
@@ -59,6 +59,6 @@ h3 { font-size: 1rem; font-weight: 600; line-height: 1.55; margin-bottom: 4px; }
 body:not([data-page="Home"]) .site-layout { display: block; }
 body:not([data-page="Home"]) .header-inner { justify-content: flex-end; }
 @media (max-width: 650px) {
-  body[data-page="Home"] .profile-photo { grid-row: 1; }
-  body[data-page="Home"] .profile-links { grid-column: 1; grid-row: 1; align-self: center; }
+  body[data-page="Home"] .profile { display: block; margin-bottom: 28px; }
+  body[data-page="Home"] .profile-photo { width: min(100%, 320px); height: auto; aspect-ratio: 230 / 245; margin: 0 auto; }
 }
